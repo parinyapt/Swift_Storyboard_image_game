@@ -9,4 +9,9 @@ import UIKit
 
 class ImageCell: UICollectionViewCell {
     
+    @IBOutlet weak var imageShow: UIImageView!
+    
+    func config(imgName:String) {
+        imageShow.image = UIImage(named:imgName)
+    }
 }
