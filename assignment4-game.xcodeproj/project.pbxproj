@@ -95,6 +95,7 @@
 		AF378F6128DF4DD000DB9C57 /* 13.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 13.jpeg; sourceTree = "<group>"; };
 		AF378F6228DF4DD000DB9C57 /* 20.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20.jpeg; sourceTree = "<group>"; };
 		AF378F7A28DF673300DB9C57 /* MostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostImageCell.swift; sourceTree = "<group>"; };
+		AF751B6828DF78AF004D5749 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +126,7 @@
 		AF378F0F28DF48B600DB9C57 = {
 			isa = PBXGroup;
 			children = (
+				AF751B6828DF78AF004D5749 /* README.md */,
 				AF378F7728DF4DDD00DB9C57 /* images */,
 				AF378F1A28DF48B600DB9C57 /* assignment4-game */,
 				AF378F3128DF48B700DB9C57 /* assignment4-gameTests */,
