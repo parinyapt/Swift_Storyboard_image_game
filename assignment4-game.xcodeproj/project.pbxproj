@@ -16,6 +16,7 @@
 		AF378F3328DF48B700DB9C57 /* assignment4_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF378F3228DF48B700DB9C57 /* assignment4_gameTests.swift */; };
 		AF378F3D28DF48B700DB9C57 /* assignment4_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF378F3C28DF48B700DB9C57 /* assignment4_gameUITests.swift */; };
 		AF378F3F28DF48B700DB9C57 /* assignment4_gameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF378F3E28DF48B700DB9C57 /* assignment4_gameUITestsLaunchTests.swift */; };
+		AF378F4C28DF4D3300DB9C57 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF378F4B28DF4D3300DB9C57 /* ImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AF378F3828DF48B700DB9C57 /* assignment4-gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "assignment4-gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF378F3C28DF48B700DB9C57 /* assignment4_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignment4_gameUITests.swift; sourceTree = "<group>"; };
 		AF378F3E28DF48B700DB9C57 /* assignment4_gameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignment4_gameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF378F4B28DF4D3300DB9C57 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				AF378F1D28DF48B600DB9C57 /* SceneDelegate.swift */,
 				AF378F1F28DF48B600DB9C57 /* ViewController.swift */,
 				AF378F2128DF48B600DB9C57 /* Main.storyboard */,
+				AF378F4B28DF4D3300DB9C57 /* ImageCell.swift */,
 				AF378F2428DF48B700DB9C57 /* Assets.xcassets */,
 				AF378F2628DF48B700DB9C57 /* LaunchScreen.storyboard */,
 				AF378F2928DF48B700DB9C57 /* Info.plist */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF378F2028DF48B600DB9C57 /* ViewController.swift in Sources */,
+				AF378F4C28DF4D3300DB9C57 /* ImageCell.swift in Sources */,
 				AF378F1C28DF48B600DB9C57 /* AppDelegate.swift in Sources */,
 				AF378F1E28DF48B600DB9C57 /* SceneDelegate.swift in Sources */,
 			);
