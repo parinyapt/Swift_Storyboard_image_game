@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var randomVSliderValue: UISlider!
     @IBOutlet weak var randomBtnLabel: UIButton!
     @IBOutlet weak var mostResultLabel: UILabel!
+    @IBOutlet weak var mostResultImageLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -67,6 +68,7 @@ class ViewController: UIViewController {
         MostImageView.reloadData()
         
         mostResultLabel.text = ""
+        mostResultImageLabel.text = ""
         
     }
     
@@ -89,11 +91,13 @@ class ViewController: UIViewController {
     func setMostImage() {
         calculateMostResult()
         mostResultLabel.text = "The most found image in \(randomLogArray.count) image of \(randomCount) time randomly."
+        mostResultImageLabel.text = "\(mostResultArray.count) Image found \(maxMostResult) time"
         
         MostImageView.reloadData()
     }
     
     func calculateMostResult() {
+        mostResultCount.removeAll()
         for i in randomLogArray {
             mostResultCount[i] = (mostResultCount[i] ?? 0 ) + 1
         }
@@ -123,8 +127,7 @@ extension ViewController: UICollectionViewDataSource {
         
         if collectionView == self.MostImageView {
             let cell = MostImageView.dequeueReusableCell(withReuseIdentifier: "MostImageCell_ID", for: indexPath) as! MostImageCell
-//            cell.config(imgName: imageConfig[mostResultArray[indexPath.item]])
-            cell.config(imgName: imageConfig[indexPath.item])
+            cell.config(imgName: imageConfig[mostResultArray[indexPath.item]])
             
             return cell
         } else {
@@ -142,8 +145,8 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         var height:CGFloat
         
         if collectionView == self.MostImageView {
-            width = (collectionView.frame.size.width - 2) / CGFloat(mostResultArray.count + 1)
-            height = (collectionView.frame.size.height)
+            width = (collectionView.frame.size.width - 2) / 4
+            height = (collectionView.frame.size.height - 40)
         }else{
             width = (collectionView.frame.size.width - 2) / 4
             height = (collectionView.frame.size.height) / 5
